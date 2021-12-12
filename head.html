@@ -57,39 +57,179 @@
         <a href="#" class="login-link">login</a>
     </div>
 </nav>
+<h2>Automatic Slideshow</h2>
+<p>Change image every 2 seconds:</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/3014/1073014-h-75be93e32cfe" style="width:100%" height="500 px">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/9748/1089748-h-5ec60f7f1eb3" style="width:100%" height="500 px">
+ 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/895/830895-h" style="width:100%" height="500px">
+
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4/ 3</div>
+  <img src="https://img1.hotstarext.com/image/upload/f_auto,t_hcdl/sources/r1/cms/prod/2912/882912-h" style="width:100%" height="500px">
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+<br>
 
 
 
+<script>
+var slideIndex = 0;
+showSlides();
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+<div class="tray-title">
+  <h2>Latest & Trending</h2>
+</div>
+<div class="row" style="min-height: 200px; margin-left: 32px;">
+<div class="col">
+  
+  <div class="card-body">
+    <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9750/1089750-v-0080b96f0348">
+  </div>
+  </div>
+
+  <div class="col">
+  
+    <div class="card-body">
+      <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6783/1086783-v-987c1faa6265">
+    </div>
+  </div>
+    
+    <div class="col">
+  
+      <div class="card-body">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3022/1083022-v-90c34f714f7a">
+      </div>
+    </div>
+      <div class="col">
+  
+        <div class="card-body">
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/8723/1078723-v-a1a04c7474f9">
+        </div>
+      </div>
+        <div class="col">
+  
+          <div class="card-body">
+            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6828/556828-v">
+          </div>
+        </div>
+          <div class="col">
+  
+            <div class="card-body">
+              <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_1x/sources/r1/cms/prod/3894/1063894-v-36910d21a4ee">
+            </div>
+          </div>
+            <div class="col">
+  
+              <div class="card-body">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3030/603030-v">
+              </div>
+            </div>
+              <div class="col">
+  
+                <div class="card-body">
+                  <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_1x/sources/r1/cms/prod/9215/1089215-v-b4ca2f9d149d">
+                </div>
+                                  
+              </div>
+            </div>
+            <div class="tray-title">
+              <h2>Movies Recommended For You</h2>
+            </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <div class="row" style="max-height: 100px; margin-left: 32px;">
+              <div class="col">
+                
+                <div class="card-body">
+                  <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6536/846536-v">
+                </div>
+                </div>
+              
+                <div class="col">
+                
+                  <div class="card-body">
+                    <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9519/1089519-v-da6e544d90e2">
+                  </div>
+                </div>
+                  
+                  <div class="col">
+                
+                    <div class="card-body">
+                      <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_1x/sources/r1/cms/prod/9111/1089111-v-fc914354cc2b">
+                    </div>
+                  </div>
+                    <div class="col">
+                
+                      <div class="card-body">
+                        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_1x/sources/r1/cms/prod/4811/1084811-v-671e78dff0e1">
+                      </div>
+                    </div>
+                      <div class="col">
+                
+                        <div class="card-body">
+                          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_1x/sources/r1/cms/prod/6402/1036402-v-0742f7a366b6">
+                        </div>
+                      </div>
+                        <div class="col">
+                
+                          <div class="card-body">
+                            <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_1x/sources/r1/cms/prod/6774/636774-v">
+                          </div>
+                        </div>
+                          <div class="col">
+                
+                            <div class="card-body">
+                              <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1684/1011684-v-374e17c7e183">
+                            </div>
+                          </div>
+                            <div class="col">
+                
+                              <div class="card-body">
+                                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_1x/sources/r1/cms/prod/5472/1055472-v-4fac4c4e1978">
+                              </div>
+                                                
+                            </div>
+                          </div>
+              
+</html>
 
